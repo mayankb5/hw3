@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+ 
+ <ul>
+   <% for posts in @posts %>
+    <li>
+      <a href="/posts/<%= post.id %><%= post.title %></a>
+    </li>
+   <% end %>
+</ul>
+
+<p>
+  <a href="/posts/new">Input New Post</a>
+</p>

@@ -1,0 +1,24 @@
+<h1>Input New Post</h1>
+
+
+<%= form_with model: @post do |form| %>
+  <p>
+    <%= form.label "Post Title" %>
+    <%= form.text_field "Post Title" %>
+  </p>
+  
+  <p>
+    <%= form.label "Post Description" %>
+    <%= form.text_field "Post Description" %>
+  </p>
+
+  <p>
+    <%= form.label "Posted On" %>
+    <%= form.text_field "Posted On" %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  <p>
+
+<% end %>
