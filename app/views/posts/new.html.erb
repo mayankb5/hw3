@@ -14,11 +14,15 @@
 
   <p>
     <%= form.label "Posted On" %>
-    <%= form.text_field "posted_on" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+
+  <p>
+    <%= form.hidden_field "place_id" %>
   </p>
 
   <p>
     <%= form.submit %>
-  <p>
+  </p>
 
 <% end %>
